@@ -1,6 +1,6 @@
 import React from 'react';
 import {useReducer} from 'react';
-import shoppingCartReducer, { type ShoppingCartItem } from './shoppingCartReducer';
+import shoppingCartReducer, { type ShoppingCartItem } from './ShoppingCartReducer';
 
 
 const ShoppingCart:React.FC=()=> {

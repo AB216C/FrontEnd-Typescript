@@ -1,13 +1,14 @@
 
 import './App.css'
-import ShoppingCart from './Components/ShoppingCart'
+import Login from './Components/Login'
 
 function App() {
 
-
   return (
     <>
-    <ShoppingCart/>
+
+    <Login/>
+  
     </>
   )
 }
