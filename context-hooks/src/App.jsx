@@ -15,7 +15,8 @@ function App() {
 
     <h1>Main Page</h1>
 
-//Wrap any component between created variable(nameContext.Provider)
+    <p>This is our maine name: ${name}</p>
+
     <nameContext.Provider value = {name}>
       <ComponentA name={name} />
     </nameContext.Provider>
@@ -27,5 +28,8 @@ function App() {
 export default App
 
 //Passing information from one component to another using propos, it is called, props drilling
+
+//Wrap any component between created variable(nameContext.Provider)
+
 
 

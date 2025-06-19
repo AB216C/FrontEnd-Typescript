@@ -1,5 +1,6 @@
 import ComponentB from "./ComponentB";
 
+
 const ComponentA =()=> {
 
   return (
