@@ -1,4 +1,3 @@
-// User.tsx
 // Example of how to use a JWT to make a request using axios
 import { useEffect, useState } from 'react';
 import axios from 'axios';
@@ -36,7 +35,7 @@ const User = () => {
     <div>
       {user &&
       <div>
-        <img src={user.data.avatar}></img>
+        <img src={user.dataavatar}></img>
         <h3>{user.data.first_name} {user.data.last_name}</h3>
         <h4>
           <a href="mailto:{user.data.email}">{user.data.email}</a>

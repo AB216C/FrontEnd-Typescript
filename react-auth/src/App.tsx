@@ -2,13 +2,12 @@
 import React from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
+import HomePage from "./HomePage";
+import CallbackPage from "./CallbackPage";
+import ProtectedPage from "./ProtectedPage";
 import { useAuth0 } from "@auth0/auth0-react";
-import HomePage from "./Components/HomePage";
-import AuthenticationGuard from "./Components/AuthenticationGuard";
-import ProfilePage from "./Components/ProfilePage";
-import ProtectedPage from "./Components/ProtectedPage";
-import CallbackPage from "./Components/CallbackPage";
-
+import ProfilePage from "./ProfilePage";
+import AuthenticationGuard from "./AuthenticationGuard";
 
 const App: React.FC = () => {
 

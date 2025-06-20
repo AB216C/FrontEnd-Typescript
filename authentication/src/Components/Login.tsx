@@ -1,4 +1,3 @@
-// Login.tsx
 // Example of logging in and obtaining a JWT token from reqres.in using Axios
 import { useState } from 'react';
 import axios from 'axios';

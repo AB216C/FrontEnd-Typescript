@@ -1,3 +1,4 @@
+//AuthenticationGuard.tsx
 import { withAuthenticationRequired } from "@auth0/auth0-react";
 
 type AuthenticationGuardProps = {

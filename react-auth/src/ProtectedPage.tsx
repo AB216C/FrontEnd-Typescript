@@ -1,3 +1,4 @@
+// ProtectedPage.tsx
 import PageLayout from "./PageLayout";
 
 const ProtectedPage: React.FC = () =>{
