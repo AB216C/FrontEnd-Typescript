@@ -49,7 +49,7 @@ function App() {
   tasks.push(task2)
   tasks.push(task3)
 
-  console.log("Tasks:", tasks)
+  //console.log("Tasks:", tasks)
 
 
   return (

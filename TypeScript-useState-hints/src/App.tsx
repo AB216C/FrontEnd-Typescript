@@ -12,12 +12,17 @@ function App() {
     setCount(count + 100);
   }
 
+    const decrement =()=> {
+    setCount(count - 100);
+  }
+
   return (
     <>
 
     <p>{count}</p>
 
-    <button onClick={increment} >Start Counting</button>
+    <button onClick={decrement} >Negative Counting</button>
+    <button onClick={increment} >Positive Counting</button>
 
     <hr></hr>
 

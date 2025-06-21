@@ -11,7 +11,7 @@ interface MyComponentState {
 // Functional component with TypeScript and useState
 const StateCounter: React.FC = () => {
   // Using useState without type assertion
-  const [state1, setState1] = useState<MyComponentState>({ count: null });
+  const [state1, setState1] = useState<MyComponentState>({ count: null } as MyComponentState);
 
   // Using useState with type assertion
   const [state2, setState2] = useState<MyComponentState>({ count: 0 } as MyComponentState);
@@ -20,7 +20,7 @@ const StateCounter: React.FC = () => {
   const incrementCount1 = () => {
     setState1((prevState) => ({
       ...prevState,
-      count: (prevState.count || 0) + 1,
+      count: (prevState.count || 0) + 5,
     }));
   };
 
@@ -28,7 +28,7 @@ const StateCounter: React.FC = () => {
   const incrementCount2 = () => {
     setState2((prevState) => ({
       ...prevState,
-      count: (prevState.count || 0) + 1,
+      count: (prevState.count || 0) + 5,
     }));
   };
 
@@ -36,6 +36,7 @@ const StateCounter: React.FC = () => {
     <div>
       {/* State 1 */}
       <p>Count in State 1: {state1.count === null ? 'null' : state1.count}</p>
+       <p>Count in State 1 prime: {state1.count}</p>
       <button onClick={incrementCount1}>Increment State 1</button>
 
       {/* State 2 */}

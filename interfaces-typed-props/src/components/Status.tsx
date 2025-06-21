@@ -5,7 +5,7 @@ export type StatusProp = {
 
 const Status:React.FC = ()=> {
       const statusInput: StatusProp = { 
-        status: 'loading'
+        status: 'success'
     }
 
         let message

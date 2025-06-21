@@ -4,10 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import type { Person,ProfileProps } from './models/Person.model';
 import Card from 'react-bootstrap/Card';
 import PersonComponent from './components/PersonComponent';
-import Status from './components/status';
 import Header from './components/Header';
 import NestedComponent from './components/NestedComponent';
 import Button from './components/Button';
+import Status from './components/Status';
 
 
 function App() {
