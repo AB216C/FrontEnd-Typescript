@@ -12,7 +12,7 @@ const Auth0ProviderWithNavigate: React.FC<Auth0ProviderWithNavigateProps> = ({
   const navigate = useNavigate();
   const domain = "dev-p0t7jzauyp37beze.us.auth0.com";
   const clientId = "taeOcyqLCPJ1KeXjPJiSMhu6aebHxTWr" ;
-  const redirectUri = "http://localhost:5173/callback"; // make sure the port matches your server
+  const redirectUri = "http://localhost:3000/callback"; // make sure the port matches your server
 
   const onRedirectCallback = (appState: any) => {
     navigate((appState && appState.returnTo) || window.location.pathname);
@@ -32,6 +32,7 @@ const Auth0ProviderWithNavigate: React.FC<Auth0ProviderWithNavigateProps> = ({
       }}
       onRedirectCallback={onRedirectCallback}
       cacheLocation="localstorage"
+      useRefreshTokens={true}
     >
       {children}
     </Auth0Provider>

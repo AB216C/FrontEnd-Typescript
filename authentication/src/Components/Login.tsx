@@ -6,19 +6,29 @@ import User from './User';
 const Login: React.FC = () => {
   // State variables to store user credentials
   const [email, setEmail] = useState('eve.holt@reqres.in');
-  const [password, setPassword] = useState('');
+  const [password, setPassword] = useState('cityslicka');
   const [token, setToken] = useState('')
 
   // Function to handle form submission and obtain JWT token from reqres.in
   const handleLogin = async (e: React.FormEvent) => {
-    e.preventDefault();    
+    e.preventDefault();
+    console.log('Sending login request with', { email, password });  
 
     try {
       // Make a POST request to your login endpoint with user credentials
       const response = await axios.post('https://reqres.in/api/login', {
         email,
         password
-      });
+      },
+
+      {
+    headers: {
+      'x-api-key': 'reqres-free-v1' // 👈 Add this header
+    }
+  }
+
+    
+    );
 
       // Log and extract JWT token from response
       console.log("The returned data ", response.data)
@@ -34,9 +44,19 @@ const Login: React.FC = () => {
 
       // Optional: Redirect user to another page upon successful login
       // history.push('/dashboard');
-    } catch (error) {
-      console.error('Login failed:', error);
-    }
+    // } catch (error) {
+    //   console.error('Login failed:', error);
+    // }
+
+    } catch (error: any) {
+  if (axios.isAxiosError(error)) {
+    console.error('Login failed:', error.response?.data || error.message);
+  } else {
+    console.error('Unexpected error:', error);
+  }
+}
+
+
   };
 
   const logoutUser = () => {

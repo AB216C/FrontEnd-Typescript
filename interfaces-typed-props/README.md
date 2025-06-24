@@ -1,3 +1,16 @@
+# TypeScript interfaces
+Now, we're kicking off our exploration of React with TypeScript by diving into the fascinating realm of TypeScript interfaces. We'll begin by unraveling the magic behind using interfaces to define the shape of data – a crucial skill in structuring information effectively within your applications.
+
+
+# To kick things off, we’ll create a new react TypeScript project and make use of the previously learned react-bootstrap library to show off our data.  Run the following commands:
+
+npx create-vite@latest interfaces-typed-props --template react-ts
+cd interfaces-typed-props 
+npm install 
+npm install react-bootstrap bootstrap
+npm run dev
+
+
 ## TypeScript interfaces
 
 Using interfaces to define the shape of data
