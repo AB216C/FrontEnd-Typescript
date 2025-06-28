@@ -5,13 +5,9 @@ function App() {
 
   return (
     <>
-
     {/* <Post/> */}
-
     <PostWithUseReducer/>
-
     </>
   )
 }
-
 export default App
