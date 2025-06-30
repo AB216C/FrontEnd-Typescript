@@ -25,3 +25,9 @@ ReactDOM.render(
   </QueryClientProvider>,
   document.getElementById('root')
 );
+
+
+# DOCUMENTATIONS
+https://tanstack.com/query/latest/docs/framework/react/overview
+
+https://www.youtube.com/watch?v=r8Dg0KVnfMA&t=67s
